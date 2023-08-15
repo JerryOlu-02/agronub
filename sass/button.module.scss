@@ -1,0 +1,17 @@
+@import './variables.module.scss';
+@import './mixins.module.scss';
+
+.btn {
+  padding: 4px 39px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+  min-height: 36px;
+  @include flex-row-center;
+}
+
+.btn.solid {
+  border: none;
+  background-color: $green;
+}

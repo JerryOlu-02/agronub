@@ -1,0 +1,38 @@
+@import './variables.module.scss';
+@import './mixins.module.scss';
+
+.navbar {
+  background-color: $black;
+  @include flex-row-center;
+  justify-content: space-between;
+  padding: 24px 40px;
+
+  ul {
+    @include flex-row-center;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+.middleNav {
+  gap: 50px;
+}
+
+.lastNav {
+  gap: 30px;
+
+  a {
+    padding: 4px 39px;
+    border-radius: 10px;
+    border: 1px solid $white;
+  }
+
+  li:last-of-type {
+    a {
+      border: none;
+      background-color: $green;
+    }
+  }
+}
