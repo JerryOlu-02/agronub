@@ -4,7 +4,7 @@
 .slider {
   position: relative;
   width: 100%;
-  min-height: 85vh;
+  min-height: 87vh;
   overflow-x: hidden;
 }
 
@@ -48,6 +48,12 @@
   position: relative;
   z-index: 2;
   color: $white;
+
+  h2 {
+    span {
+      color: $green;
+    }
+  }
 
   div {
     @include flex-row-center;

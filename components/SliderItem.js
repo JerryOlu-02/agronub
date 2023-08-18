@@ -8,7 +8,7 @@ export default function SliderItem({ title, content, image }) {
       <Image src={image} alt={title} priority />
 
       <div className={styles.sliderItem}>
-        <h2>{title}</h2>
+        {title}
         <p>{content}</p>
         <div>
           <Button solid>Learn More</Button>

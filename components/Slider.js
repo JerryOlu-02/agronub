@@ -4,7 +4,6 @@ import SliderItem from './SliderItem';
 import styles from '@/sass/slider.module.scss';
 import ArrowLeft from '@/assets/arrow-left.svg';
 import ArrowRight from '@/assets/arrow-right.svg';
-import { useState } from 'react';
 import { useSlider } from '@/hooks/use-slider';
 
 export default function Slider({ data }) {
@@ -15,7 +14,7 @@ export default function Slider({ data }) {
       <aside
         style={{ transform: `translateX(${(index - currentSlide) * 100}%)` }}
         className={styles.slide}
-        key={slide.title}
+        key={index}
       >
         <SliderItem
           title={slide.title}

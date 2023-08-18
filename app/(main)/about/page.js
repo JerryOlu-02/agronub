@@ -1,3 +1,9 @@
+import About from '@/components/AboutPage/About';
+
 export default function AboutPage() {
-  return <main>About Page</main>;
+  return (
+    <main>
+      <About />
+    </main>
+  );
 }
