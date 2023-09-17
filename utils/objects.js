@@ -3,6 +3,9 @@ import Image2 from '@/assets/screen-bg-2.jpg';
 import Image3 from '@/assets/screen-bg-3.jpg';
 import Farmer from '@/assets/investor.jpg';
 import Investor from '@/assets/farmer.jpg';
+import BlogImage1 from '@/assets/blog-img-1.jpg';
+import BlogImage2 from '@/assets/blog-img-2.jpg';
+import BlogImage3 from '@/assets/blog-img-3.jpg';
 
 export const SLIDER_DATA = [
   {
@@ -115,5 +118,31 @@ export const LAST__SLIDER_DATA = [
         - Joe Umeritini (<span>Investor</span>){' '}
       </p>
     ),
+  },
+];
+
+export const BLOG_DATA = [
+  {
+    image: BlogImage1,
+    title: 'How AgroNub encourages nursery farming and how it has helped',
+    content:
+      'Nulla erat in id lectus nunc. Sapien egestas nunc et interdum ultrices phasellus. Aliquet vitae nisl erat ultrices nec, nec maecenas. Sit sit quis mi risus. Posuere nunc tellus cras volutpat ut...',
+    date: 'Aug 16',
+  },
+  {
+    image: BlogImage2,
+    title:
+      'Learn how investments from Agronub has helped improve cattle rearing',
+    content:
+      'Pretium netus varius amet dolor tempus vulputate volutpat urna, diam. Risus tristique ultricies facilisi vel rhoncus urna, elementum sit. Ante pulvinar odio vel lorem. Commodo nulla eu tristique arcu....',
+    date: 'May 10',
+  },
+  {
+    image: BlogImage3,
+    title:
+      'Interview with a few farmers on what they think AgroNub could do better',
+    content:
+      'Tellus pretium at dolor diam malesuada ultricies in in arcu. Eu augue sed velit eleifend mi vivamus diam bibendum. Volutpat sed in mi accumsan sit mi, neque hac. Vel scelerisque habitant...',
+    date: 'Jan 23',
   },
 ];

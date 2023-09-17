@@ -1,3 +1,9 @@
+import Faqs from '@/components/FAQS/Faq';
+
 export default function FaqsPage() {
-  return <main>FAQs Page</main>;
+  return (
+    <main>
+      <Faqs />
+    </main>
+  );
 }

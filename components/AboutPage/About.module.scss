@@ -1,0 +1,160 @@
+@import '../../sass/variables.module.scss';
+@import '../../sass/mixins.module.scss';
+
+// ABOUT FIRST SCREEN
+.about__screen,
+.about__screen_two {
+  overflow: hidden;
+  @include flex-row-center;
+  padding: 0 0 0 60px;
+  background-color: $background;
+  color: $white;
+  width: 100%;
+  // min-height: 30rem;
+}
+
+.about__screen_left {
+  width: 60%;
+  padding-right: 60px;
+  @include flex-col;
+  gap: 20px;
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+.about__screen_div {
+  @include flex-row-center;
+  gap: 60px;
+  position: relative;
+  min-height: 300px;
+
+  div {
+    max-width: 430px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: $white;
+    color: $black;
+
+    h3 {
+      font-weight: 600;
+    }
+
+    p {
+      font-weight: 400;
+    }
+
+    border-radius: 10px;
+    padding: 40px;
+    @include flex-col;
+    gap: 10px;
+  }
+
+  div:last-of-type {
+    background-color: $green;
+    left: unset;
+    right: -30%;
+  }
+}
+
+.about__screen_right {
+  width: 40%;
+  height: 46rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// ABOUT SECOND SCREEN
+.about__screen_two {
+  flex-direction: row-reverse;
+  padding: 0 60px 0 0;
+
+  .about__screen_left {
+    padding-right: 0;
+    padding-left: 60px;
+  }
+
+  .about__screen_div {
+    div {
+      left: unset;
+      right: 0;
+    }
+
+    div:first-of-type {
+      right: unset;
+      left: -30%;
+    }
+  }
+}
+
+// ABOUT BLOG
+.blog__posts {
+  @include flex-col;
+  @include padding;
+  background-color: $background;
+  color: $white;
+  padding-top: 40px;
+  gap: 40px;
+}
+
+.blog__posts_header {
+  @include flex-col;
+  gap: 10px;
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+.blog__posts_cards {
+  @include flex-row-center;
+  gap: 40px;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.blog__card {
+  background-color: $white;
+  color: $black;
+  border-radius: 20px;
+  max-width: 520px;
+  min-height: 500px;
+
+  img {
+    border-radius: 20px 20px 0 0;
+    height: 300px;
+    width: 500px;
+  }
+
+  .blog__card_bottom {
+    padding: 20px 30px;
+    @include flex-col;
+    gap: 15px;
+
+    aside {
+      border-top: 1px solid $black;
+      margin-top: 15px;
+      padding-top: 20px;
+      @include flex-row-center;
+      justify-content: space-between;
+
+      p {
+        @include flex-row-center;
+        gap: 5px;
+      }
+
+      p:nth-of-type(2) {
+        cursor: pointer;
+      }
+    }
+  }
+}

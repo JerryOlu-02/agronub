@@ -1,0 +1,64 @@
+@import '../../sass/variables.module.scss';
+@import '../../sass/mixins.module.scss';
+
+.faq {
+  @include padding;
+  @include flex-col;
+  background-color: $background;
+}
+
+.firstFaq {
+  @include flex-row-center;
+  gap: 60px;
+
+  aside {
+    width: 50%;
+  }
+}
+
+.faqText {
+  color: $white;
+  @include flex-col;
+  gap: 20px;
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+.faqDropdown {
+  width: 100%;
+
+  p {
+    background-color: $green;
+    padding: 16.5px 30px;
+    @include flex-row-center;
+    justify-content: space-between;
+
+    span {
+      @include flex-row-center;
+      transition: transform 0.1s ease-in-out;
+    }
+
+    .activeDropdown {
+      transform: rotate(180deg);
+    }
+  }
+
+  div {
+    color: $black;
+    padding: 22px 30px;
+    background-color: $white;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+
+    transition-property: transform opacity;
+    transition: 0.5s ease-in-out;
+  }
+
+  .activeText {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

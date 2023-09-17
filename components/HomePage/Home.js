@@ -167,7 +167,7 @@ function WhyChoose({ data }) {
   );
 }
 
-function Stats() {
+export function Stats() {
   return (
     <section className={styles.stats}>
       <div>
