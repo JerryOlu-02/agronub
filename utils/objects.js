@@ -146,3 +146,31 @@ export const BLOG_DATA = [
     date: 'Jan 23',
   },
 ];
+
+export const FAQ_QUESTIONS = [
+  {
+    text: 'Aliquam in leo tellus magna pretium. Morbi massa, euismod id amet?',
+    answer:
+      'Lobortis mattis commodo mollis pellentesque tristique aenean. Nibh ultricies odio ut id. Dignissim faucibus fermentum vitae nam. Praesent risus nisl in amet sociis lacus amet. Viverra enim, nisi arcu massa vitae at vulputate luctus.',
+  },
+  {
+    text: 'Eget eget accumsan rutrum at elementum euismod ultrices pellentesque nunc?',
+    answer:
+      'Lobortis mattis commodo mollis pellentesque tristique aenean. Nibh ultricies odio ut id. Dignissim faucibus fermentum vitae nam. Praesent risus nisl in amet sociis lacus amet. Viverra enim, nisi arcu massa vitae at vulputate luctus.',
+  },
+  {
+    text: 'Est velit in euismod ut enim at odio. Potenti egestas at sapien aliquam at accumsan ac?',
+    answer:
+      'Lobortis mattis commodo mollis pellentesque tristique aenean. Nibh ultricies odio ut id. Dignissim faucibus fermentum vitae nam. Praesent risus nisl in amet sociis lacus amet. Viverra enim, nisi arcu massa vitae at vulputate luctus.',
+  },
+  {
+    text: 'Lacinia facilisi enim odio aliquet etiam adipiscing placerat gravida tortor?',
+    answer:
+      'Lobortis mattis commodo mollis pellentesque tristique aenean. Nibh ultricies odio ut id. Dignissim faucibus fermentum vitae nam. Praesent risus nisl in amet sociis lacus amet. Viverra enim, nisi arcu massa vitae at vulputate luctus.',
+  },
+  {
+    text: 'Etiam ac tellus eget dictumst id vestibulum. Semper eleifend tincidunt fusce gravida?',
+    answer:
+      'Lobortis mattis commodo mollis pellentesque tristique aenean. Nibh ultricies odio ut id. Dignissim faucibus fermentum vitae nam. Praesent risus nisl in amet sociis lacus amet. Viverra enim, nisi arcu massa vitae at vulputate luctus.',
+  },
+];

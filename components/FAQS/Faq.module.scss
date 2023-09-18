@@ -4,7 +4,9 @@
 .faq {
   @include padding;
   @include flex-col;
+  align-items: center;
   background-color: $background;
+  gap: 60px;
 }
 
 .firstFaq {
@@ -37,7 +39,7 @@
 
     span {
       @include flex-row-center;
-      transition: transform 0.1s ease-in-out;
+      transition: transform 0.5s ease-in-out;
     }
 
     .activeDropdown {
@@ -47,18 +49,38 @@
 
   div {
     color: $black;
-    padding: 22px 30px;
     background-color: $white;
     opacity: 0;
+    height: 0;
     transform: scaleY(0);
     transform-origin: top;
 
-    transition-property: transform opacity;
+    transition-property: transform opacity height padding;
     transition: 0.5s ease-in-out;
   }
 
   .activeText {
+    padding: 22px 30px;
     opacity: 1;
+    height: max-content;
     transform: scaleY(1);
+  }
+}
+
+.faqList {
+  @include flex-col;
+  gap: 5px;
+  width: 60%;
+}
+
+@media (max-width: 1320px) {
+  .faqList {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1048px) {
+  .faqList {
+    width: 90%;
   }
 }

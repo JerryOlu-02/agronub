@@ -5,10 +5,12 @@ import FaqSvg from '@/assets/faq-svg.svg';
 import AngleUp from '@/assets/angle-up.svg';
 import { useDropdown } from '@/hooks/use-dropdown';
 
-export default function Faqs() {
+export default function Faqs({ data }) {
   return (
     <section className={styles.faq}>
       <FirstFaq />
+
+      <FaqList data={data} />
     </section>
   );
 }
@@ -55,6 +57,33 @@ function FirstFaq() {
   );
 }
 
-function FaqList() {}
+function FaqList({ data }) {
+  return (
+    <div className={styles.faqList}>
+      {data.map((faq, index) => (
+        <FaqShow key={index} question={faq.text} answer={faq.answer} />
+      ))}
+    </div>
+  );
+}
 
-function FaqShow() {}
+function FaqShow({ question, answer }) {
+  const { isVisible, toggleVisibility } = useDropdown();
+
+  return (
+    <div className={styles.faqDropdown}>
+      <p>
+        {question}
+
+        <span
+          className={`${isVisible && styles.activeDropdown}`}
+          onClick={() => toggleVisibility()}
+        >
+          <AngleUp />
+        </span>
+      </p>
+
+      <div className={`${isVisible && styles.activeText}`}>{answer}</div>
+    </div>
+  );
+}
